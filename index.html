@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- center div (container) -->
+  
+  <div>
+
+    <!-- main heading -->
+
+    <h2>
+      <span class="heading">
+        BMI</span>Calculator
+    </h2>
+    <span class="text"> 
+      Height:&nbsp; 
+    </span> 
+    
+    <!-- height input -->
+
+    <input class="input" id="inheight" type="height" placeholder="height">
+    
+    <!-- unit selector switch with label:start -->
+    
+    <span class="units">&nbsp; in </span>
+    <label class="switch"  >
+      <input type="checkbox"  id="heightCheck">
+      <span class="slider round"></span>
+    </label>
+    <span class="units"> cm </span>
+    
+    <!-- unit selector switch with label:end -->
+    
+    <p></p>
+    <!-- weight input -->
+    <span class="text">
+      Weight: 
+    </span>
+    <input class="input" id="inweight" type="text" placeholder="weight" >
+    
+    <!-- unit selector switch with label:start -->
+    
+    <span class="units">&nbsp; kg </span>
+    <label class="switch" >
+      <input type="checkbox" id="weightCheck">
+      <span class="slider round" >
+      </span>
+    </label>
+    <span class="units"> lb </span>
+
+    <!-- unit selector switch with label:end -->
+    
+    <!-- calculate button -->
+    
+    <button id="button" onclick="bmi()" class="btn">
+      Calculate
+    </button>
+    <br>
+    
+    <!-- result display -->
+    
+    <p class="result-label"><strong>Your BMI is:</strong> </p>
+    <span id="result" class="result" ></span>
+  
+    
+  </div>
+  <script src="calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+body{
+  height: 97vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("images/backgroundimg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div{
+  width: 450px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background-color: rgba(0, 0,0, 0.4);
+  box-shadow: 2px 2px 2px rgb(130, 122, 122);
+  border-radius: 2px;
+  text-align: left;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+  
+}
+h2{
+  margin-top: 10px;
+  font-family: Arial;
+  font-size: xx-large;
+  margin-left: 100px;
+}
+
+.text{
+  font-family: Arial;
+  font-size: 24px;
+  vertical-align: middle;
+  line-height: 50px;
+  margin-left: 35px;
+}
+.input{
+  margin-left: 6px;
+  height: 28px;
+  border-width: 1px;
+  border-radius: 3px;
+  border-color: grey;
+}
+.btn{
+  background-color: rgb(14, 227, 32);
+  color: white;
+  border-color:  rgb(14, 227, 32) ;
+  border-style: solid; 
+  cursor: pointer;
+  border-radius: 20px;
+  height: 40px;
+  width: 100px;
+  font-size: medium;
+  font-weight: bold;
+  margin-left: 170px;
+  margin-top: 20px; 
+}
+  /* for hover */
+.btn:hover{
+  opacity: 0.7;
+}
+/* when button is clicked */
+.btn:active{
+  opacity: 0.4;
+}
+.heading{
+  color: rgb(14, 227, 32);
+  font-size: 50px;
+}
+.units{
+  font-family: Arial;
+  font-size: 13px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #109f03;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color:  rgb(14, 227, 32);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px  rgb(14, 227, 32);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.result{
+  color: rgb(14, 227, 32);
+  font-size: 50px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.result-label{
+  font-size: 20px;
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 50px;
+  display: inline-block;
+  
+}
